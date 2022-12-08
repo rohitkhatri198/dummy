@@ -1,0 +1,228 @@
+@import "/styles/variables.scss";
+@import "/styles/variables.scss";
+
+.container {
+  // width: 350px;
+  margin: 0 0.5rem;
+  &.React {
+    .singleTask {
+      .taskCategory {
+        .category {
+          background-color: rgb(250, 97, 97);
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+  .cardWrapper {
+    padding: 0.9375rem;
+  }
+  .singleTask {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // margin: 15px 15px 15px;
+    color: #fff;
+    cursor: pointer;
+    // width: 100%;
+    // width: 330px;
+    // height: 386px;
+    // width: 343px;
+    height: 352px;
+    width: 343px;
+    padding: 0 16px;
+    background-color: #29292f80;
+    border-radius: 5px;
+    // cursor: url(/images/cursor.png), auto;
+    &:hover {
+      background: #29292f;
+    }
+
+    @media screen and (max-width: $mobileResolution) {
+      //   margin: 10px 40px;
+      margin-top: 1rem;
+      max-width: 100%;
+    }
+
+    .taskCategory {
+      display: flex;
+      justify-content: space-between;
+      .category {
+        font-size: 16px;
+        color: #4ca1ff;
+        // border: 1px solid #29292f;
+        background: #002246;
+        border-radius: 4.5px;
+        display: flex;
+        align-items: center;
+        padding: 0 0.5rem;
+        p {
+          font-size: 16px;
+          margin: 0;
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+      }
+
+      .addWrapper {
+        display: flex;
+        // min-width: 80px;
+      }
+      .add {
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        .addIcon {
+          // opacity: 24%;
+          padding-top: 6px;
+          padding-right: 5px;
+          display: inline-block;
+        }
+        p {
+          font-size: 16px;
+          margin: 0;
+          color: #ffffff;
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .taskTitle {
+      p {
+        margin: 0;
+        margin-top: 5px;
+        font-size: 22px;
+        line-height: 120%;
+        @media screen and (max-width: $mobileResolution) {
+          font-size: 18px;
+          margin: 8px 0;
+        }
+      }
+    }
+
+    .tags {
+      // margin-top: 5px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .tag {
+        margin-left: 0px;
+        font-weight: bold;
+        margin-right: 5px;
+        padding: 5px 10px;
+        border-radius: 20px;
+        color: #fff;
+        border: 1px solid #29292f;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0px;
+          padding: 0px;
+        }
+      }
+      .moreTags {
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 20px;
+        background-color: gray;
+        color: white;
+      }
+    }
+
+    .taskDescription {
+      p {
+        font-size: 14px;
+        line-height: 120%;
+        opacity: 80%;
+        word-break: break-all;
+        @media screen and (max-width: $mobileResolution) {
+          font-size: 14.1px;
+        }
+      }
+    }
+
+    .taskStatus {
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-top: 7.99px;
+      }
+      .status {
+        margin-left: 5px;
+        margin-top: 2px;
+        margin-bottom: 0;
+        p {
+          margin: 0;
+          font-size: 16px;
+          letter-spacing: -0.01em;
+          color: #ffffff;
+          opacity: 0.5;
+        }
+      }
+    }
+
+    .rewards {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 25px;
+      // margin-top: 10px;
+      .rewardTitle {
+        font-size: 15px;
+        font-weight: 700;
+        // margin-right: 10px;
+        margin: 0 20px 0 0;
+        // @media screen and (max-width: $mobileResolution) {
+        //   margin: 0 10px 0 0;
+        // }
+      }
+      .cryptoCurrency {
+        display: flex;
+        padding: 1px;
+        border: 1px solid #29292f;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-right: -30px;
+
+        p {
+          padding: 0;
+          margin: 0;
+          padding: 0 5px 0 2px;
+          font-size: 16px;
+        }
+      }
+      &:hover {
+        border: 1px solid #29292f80;
+      }
+
+      .fiatCurrency {
+        font-size: 16px;
+        margin: 0;
+        // @media screen and (max-width: $mobileResolution) {
+        //   margin: 0;
+        // }
+      }
+    }
+    .viewBtn {
+      margin: 0.9375rem 0 0;
+      p {
+        text-align: center;
+        width: 100%;
+        min-width: 130px;
+        // max-width: 130px;
+        font-size: 16px;
+        padding: 8px 16px;
+        border-radius: 10px;
+        color: #3094f2;
+        border: solid #3094f2 1px;
+      }
+    }
+  }
+  // &:hover {
+  //   background: #29292f;
+  // }
+}

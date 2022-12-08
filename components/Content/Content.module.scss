@@ -1,0 +1,50 @@
+@import "/styles/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 6rem;
+  @media screen and (max-width: $mobileResolution) {
+    display: block;
+    padding: 2rem 1rem;
+  }
+  .left {
+    width: 100%;
+    max-width: 503px;
+    @media screen and(max-width:$mobileResolution) {
+      max-width: 396px;
+      font-weight: 300;
+      // font-size: 39px;
+    }
+    .contentText {
+      font-family: "Satoshi";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 39px;
+      line-height: 47px;
+      letter-spacing: -0.03em;
+      @media screen and(max-width:$mobileResolution) {
+        font-weight: 300;
+        font-size: 29px;
+      }
+    }
+  }
+  .right {
+    .buyButton {
+      font-family: "Satoshi";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 39px;
+      line-height: 53px;
+      letter-spacing: 0.03em;
+      padding-right: 9rem;
+      background: linear-gradient(90deg, #df0305 0%, #ff0071 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      //   background-clip: text;
+      @media screen and (max-width: $mobileResolution) {
+        padding-right: unset;
+      }
+    }
+  }
+}

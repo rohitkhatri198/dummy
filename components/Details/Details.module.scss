@@ -1,0 +1,10 @@
+@import "/styles/variables.scss";
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    margin: 0 auto;
+    padding: 15rem;
+  }
+}

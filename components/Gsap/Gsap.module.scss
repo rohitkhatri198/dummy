@@ -1,0 +1,54 @@
+@import "/styles/variables.scss";
+.container {
+  background: #0000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  .content {
+    // animation: spin 10s forwards infinite;
+    @keyframes spin {
+      from {
+        rotate: 0deg;
+        transform: translate(2rem 5rem);
+      }
+      to {
+        rotate: 360deg;
+      }
+    }
+    .play {
+      color: #fff;
+      background: rgb(3, 72, 146);
+      font-size: 20px;
+      border-radius: 10pxs;
+      padding: 0.5rem;
+    }
+    .circleContainer {
+      display: block;
+      align-items: center;
+      gap: 4rem;
+      .circleYellow {
+        border-radius: 50%;
+        background: yellow;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2rem;
+      }
+      .circleRed {
+        border-radius: 50%;
+        background: red;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2rem;
+      }
+      .circleBlue {
+        border-radius: 50%;
+        background: blue;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

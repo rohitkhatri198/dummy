@@ -1,0 +1,16 @@
+@import "/styles/variables.scss";
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    .imageWrapper {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      background-color: red;
+    }
+  }
+}

@@ -1,0 +1,112 @@
+@import "/styles/variables.scss";
+.container {
+  //   padding: 4rem 2rem;
+  color: $primary;
+
+  h2 {
+    margin: 0 4rem;
+    color: $primary;
+    padding-bottom: 2rem;
+    font-size: 25px;
+    font-family: $font-alternate;
+    @media screen and (max-width: $mobileResolution) {
+      text-align: center;
+      margin: unset;
+    }
+  }
+  .info {
+    padding: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: $mobileResolution) {
+      padding: unset;
+    }
+    .heading_title {
+      width: 100%;
+      max-width: 542px;
+      margin: 0 2.5rem 0 0;
+
+      p {
+        font-family: $font-default;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        opacity: 0.5;
+      }
+    }
+    .headingtitle {
+      width: 100%;
+      max-width: 345px;
+      margin: 0 4rem 0 0;
+      p {
+        font-family: $font-default;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        opacity: 0.5;
+      }
+    }
+  }
+  .rmwrapper {
+    background: url(/images/line.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    @media screen and (max-width: $mobileResolution) {
+      background: url(/images/line_mobilebackground);
+    }
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      .road_para {
+        width: 100%;
+        max-width: 194px;
+        background: rgba(0, 0, 0, 0.07);
+        border: 0.5px solid rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(17px);
+        padding: 0.5rem;
+        .questionnum {
+          //   color: #fff;
+          h3 {
+            font-weight: 600;
+            font-size: 39px;
+            line-height: 42px;
+            color: #fff;
+            span {
+              font-size: 16px;
+            }
+          }
+          .detail {
+            p {
+              font-family: "Satoshi";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22px;
+              opacity: 0.5;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+      .road_para_first {
+        transform: translate(4rem, 16rem);
+      }
+      .road_para_two {
+        transform: translate(0rem, 14rem);
+      }
+      .road_para_three {
+        transform: translate(-3rem, 11rem);
+      }
+      .road_para_four {
+        transform: translate(-8rem, -3rem);
+      }
+      .road_para_five {
+        transform: translate(-8rem, -3rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@import "/styles/variables.scss";
+.container {
+  background: url(/images/bannerbg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  //   height: 1242px;
+  background-size: cover;
+  background-position: center;
+  //   position: relative;
+  .content {
+    .navBar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 5rem;
+      @media screen and (max-width: $mobileResolution) {
+        padding: 0.5rem;
+        align-items: unset;
+      }
+      .connect {
+        border-right: 1px solid #fff;
+        padding-right: 0.5rem;
+        @media screen and (max-width: $mobileResolution) {
+          border: none;
+          padding: unset;
+        }
+      }
+    }
+    .solve {
+      padding: 2rem 6rem;
+      @media screen and (max-width: $mobileResolution) {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+  &::after {
+    content: " ";
+    background: url(/images/blackgradient.png);
+    height: 22vh;
+  }
+}
