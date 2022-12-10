@@ -24,6 +24,7 @@
     "react-player": "^2.9.0",
     "react-scroll-parallax": "^3.3.2",
     "react-spiral": "^1.0.16",
+    "react-spring": "^9.5.5",
     "react-tsparticles": "^2.3.3",
     "recoil": "^0.7.6",
     "sass": "^1.45.1",

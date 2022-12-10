@@ -1,10 +1,12 @@
 import About from "@components/About";
 import Banner from "@components/Banner";
+import Canvas from "@components/Canvas";
 import { Footer, Header } from "@components/common";
 import Details from "@components/Details";
 import Gsap from "@components/Gsap";
 import List from "@components/List";
 import TaskCard from "@components/List/TaskCard";
+import Parrallax from "@components/Parallax/Parrallax";
 import Roadmap from "@components/Roadmap";
 import ScrollParallax from "@components/ScrollParallax";
 import { AppConstant } from "constant/AppConstant";
@@ -19,8 +21,10 @@ const Home: NextPage = () => {
         <title>{AppConstant.meta.title}</title>
         <meta name="description" content={AppConstant.meta.description} />
       </Head>
-      {/* <Header />
-      <Footer /> */}
+      <Header />
+      {/* <Canvas /> */}
+      <Parrallax />
+      {/* <Footer /> */}
       {/* <Banner />
       <About /> */}
       {/* <Roadmap /> */}
@@ -29,8 +33,8 @@ const Home: NextPage = () => {
       {/* <TaskCard name={`rohit`} isVisible={true} />
       <TaskCard name={`karina`} isVisible={true} />
       <TaskCard name={`rohit`} isVisible={true} /> */}
-      <Gsap />
-      <ScrollParallax />
+      {/* <Gsap />
+      <ScrollParallax /> */}
     </Layout>
   );
 };

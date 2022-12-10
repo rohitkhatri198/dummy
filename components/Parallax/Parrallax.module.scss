@@ -1,0 +1,18 @@
+@import "/styles/variables.scss";
+.container {
+  height: 500vh;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .red {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    width: 50vh;
+
+    border-radius: 10%;
+
+    background-color: red;
+  }
+}

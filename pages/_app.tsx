@@ -7,6 +7,7 @@ import "../styles/theme.scss";
 import type { AppProps } from "next/app";
 import NProgress from "nprogress";
 import Router from "next/router";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function MyApp({ Component, pageProps }: AppProps) {
   // const router = useRouter();
@@ -20,7 +21,9 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Component {...pageProps} />
+      <ParallaxProvider>
+        <Component {...pageProps} />
+      </ParallaxProvider>
     </>
   );
 }

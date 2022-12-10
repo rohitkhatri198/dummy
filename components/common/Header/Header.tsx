@@ -36,13 +36,7 @@ const Header: FC<Props> = ({ hideMenu }) => {
         </div>
         <div className={s.logo}>
           <Link href="/">
-            <a>
-              <Image
-                src="/images/logo.svg"
-                alt="hidden whales logo"
-                layout="fill"
-              />
-            </a>
+            <a>contri</a>
           </Link>
         </div>
         <div className={`${s.content} header-content`}>
@@ -105,11 +99,12 @@ const Header: FC<Props> = ({ hideMenu }) => {
             </div> */}
           </div>
 
-          <div className={`btn-primary ${s.walletbtn}`}>
+          {/* <div className={`btn-primary ${s.walletbtn}`}>
             <Link href="#">
               <a>Connect Wallet</a>
             </Link>
-          </div>
+          </div> */}
+          <div className={`${s.btnBuy}`}>Own for 50$</div>
 
           <div className="ml-md-3 ml-1">
             {/* <Image

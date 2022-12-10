@@ -16,7 +16,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="eng" className="notranslate">
         <Head>
           <link rel="shortcut icon" href="/images/logo.svg" type="image/png" />
           <link
