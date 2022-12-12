@@ -1,18 +1,36 @@
 @import "/styles/variables.scss";
 .container {
-  height: 500vh;
+  height: 200vh;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  .red {
+  margin-top: 3rem;
+  background: black;
+  .canvas {
     display: flex;
     justify-content: center;
     height: 50vh;
     width: 50vh;
+    margin-top: 2rem;
+    // background: red;
 
     border-radius: 10%;
 
-    background-color: red;
+    .box {
+      transform: skew(10, -78);
+      height: 20vh;
+      width: 20vw;
+      background-image: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+    }
   }
 }

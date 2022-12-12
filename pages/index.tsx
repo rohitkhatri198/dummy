@@ -4,6 +4,7 @@ import Canvas from "@components/Canvas";
 import { Footer, Header } from "@components/common";
 import Details from "@components/Details";
 import Gsap from "@components/Gsap";
+import useScrollPosition from "@components/hooks/useScrollPosition";
 import List from "@components/List";
 import TaskCard from "@components/List/TaskCard";
 import Parrallax from "@components/Parallax/Parrallax";

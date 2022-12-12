@@ -1,14 +1,20 @@
 import React, { FC, useEffect, useRef, useState } from "react";
+import { Parallax, useParallax } from "react-scroll-parallax";
 import s from "./Canvas.module.scss";
 interface Props {
   className?: string;
+  headerPosition: number;
 }
 
-export const Canvas: FC<Props> = ({ className, children }) => {
+export const Canvas: FC<Props> = ({ className, children, headerPosition }) => {
+  console.log("headerPosition :", headerPosition);
   const commonRef: any = useRef({});
   commonRef.current = {};
   const [windowHeight, scrollerHeight] = useState(0);
   const [screenWidth, setScreenWidth] = useState(false);
+  const scroll = useParallax<HTMLDivElement>({
+    rotateY: [10, -80],
+  });
 
   useEffect(() => {
     const canvas: any = document.getElementById("car-360-image");
@@ -19,7 +25,7 @@ export const Canvas: FC<Props> = ({ className, children }) => {
     const context = canvas.getContext("2d");
 
     canvas.width = 1800;
-    canvas.height = 1200;
+    canvas.height = 2500;
 
     const frameCount = 64;
     const currentFrame = (index: number) =>
@@ -159,7 +165,11 @@ export const Canvas: FC<Props> = ({ className, children }) => {
         className={`${s.animeContainer} ${s.className}`}
         ref={(el) => (commonRef.current["carContainer"] = el)}
       >
-        <canvas id="car-360-image" className={s.hoodie} />
+        <Parallax speed={5}>
+          <div ref={scroll.ref} className={s.wrapper}>
+            <canvas id="car-360-image" className={s.hoodie} />
+          </div>
+        </Parallax>
       </div>
     </div>
   );

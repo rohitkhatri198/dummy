@@ -1,5 +1,8 @@
 import Canvas from "@components/Canvas";
+import Gsap from "@components/Gsap";
+import useScrollPosition from "@components/hooks/useScrollPosition";
 import ScrollParallax from "@components/ScrollParallax";
+import Spiral from "@components/Spiral/Spiral";
 import React from "react";
 import {
   Parallax,
@@ -9,14 +12,17 @@ import {
 } from "react-scroll-parallax";
 import s from "./Parrallax.module.scss";
 const Parrallax = () => {
+  const scrollPos = useScrollPosition();
+  const headerHeight = scrollPos;
   const parallax = useParallax<HTMLDivElement>({
-    scale: [2.5, 0.2, "easeInQuad"],
+    scale: [2.5, 0.056678, "easeInQuad"],
   });
+
   return (
     <div className={s.container}>
       <Parallax speed={10}>
         <div ref={parallax.ref} className={s.canvas}>
-          <Canvas />
+          <Canvas headerPosition={headerHeight} />
         </div>
       </Parallax>
     </div>
